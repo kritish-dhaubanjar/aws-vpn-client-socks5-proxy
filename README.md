@@ -58,3 +58,10 @@ Use proxychains4 to run a command through the SOCKS5 proxy:
 proxychains pg_isready -h postgres-aurora.cluster-xxxxxxxxxxxx.us-west-2.rds.amazonaws.com -p 5432 -t 5
 proxychains psql "host=postgres-aurora.cluster-xxxxxxxxxxxx.us-west-2.rds.amazonaws.com  port=5432 dbname=postgres user=admin"
 ```
+
+### 2. Reset
+```bash
+ip route flush table 100
+ip rule del priority 100
+sed -i -E '/lanout/d;/^\s*100\s+/d' /etc/iproute2/rt_tables
+```
