@@ -15,7 +15,7 @@ Add a new table `lanout` with id 100:
 echo "100 lanout" | sudo tee -a /etc/iproute2/rt_tables
 ```
 
-### 2. Add a route for your server in that table
+### 2. Add a route for your target in that table
 ```bash
 ip route add 192.168.0.100/32 dev enx00e04c1b2c80 table lanout
 ```
