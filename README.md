@@ -56,4 +56,5 @@ ssh -N -D 1080 user@192.168.0.254
 Use proxychains4 to run a command through the SOCKS5 proxy:
 ```bash
 proxychains pg_isready -h postgres-aurora.cluster-xxxxxxxxxxxx.us-west-2.rds.amazonaws.com -p 5432 -t 5
+proxychains psql "host=postgres-aurora.cluster-xxxxxxxxxxxx.us-west-2.rds.amazonaws.com  port=5432 dbname=postgres user=admin"
 ```
