@@ -1,6 +1,8 @@
 ## SOCKS5 Proxy for AWS VPN Client
 This guide provides steps to set up a SOCKS5 proxy using SSH dynamic port forwarding through a bastion host on an AWS VPN client. This setup allows a target client on the LAN to access resources via the bastion host.
 
+<img width="855" height="90" alt="Bulk (1)" src="https://github.com/user-attachments/assets/e405796c-369f-45f0-92af-2058ca69a441" />
+
 ### Network setup
 - Bastion AWS VPN Client Host: A server with IP (e.g., 192.168.0.254)
 - Target Client: A client on the LAN (e.g., 192.168.0.100)
