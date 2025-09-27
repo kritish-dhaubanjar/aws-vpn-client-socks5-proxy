@@ -59,7 +59,7 @@ proxychains pg_isready -h postgres-aurora.cluster-xxxxxxxxxxxx.us-west-2.rds.ama
 proxychains psql "host=postgres-aurora.cluster-xxxxxxxxxxxx.us-west-2.rds.amazonaws.com  port=5432 dbname=postgres user=admin"
 ```
 
-### 2. Reset
+## 3. Reset
 ```bash
 ip route flush table 100
 ip rule del priority 100
