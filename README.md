@@ -62,7 +62,8 @@ proxychains psql "host=postgres-aurora.cluster-xxxxxxxxxxxx.us-west-2.rds.amazon
 ```
 
 ```bash
-socat --experimental TCP-LISTEN:15432,fork SOCKS5:127.0.0.1:1080:postgres-aurora.cluster-xxxxxxxxxxxx.us-west-2.rds.amazonaws.com:5432
+socat --experimental TCP-LISTEN:5432,fork SOCKS5:127.0.0.1:1080:postgres-aurora.cluster-xxxxxxxxxxxx.us-west-2.rds.amazonaws.com:5432
+socat --experimental TCP-LISTEN:8000,fork SOCKS5:127.0.0.1:1080:dynamodb.us-west-2.amazonaws.com:80
 ```
 
 ## 3. Reset
